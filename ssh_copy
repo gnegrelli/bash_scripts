@@ -15,9 +15,11 @@ case $machine in
 	machine_1)
 		key='path_to_key1.pem'
 		hostname='hostname_1'
+		;;
 	machine_2)
 		key='path_to_key2.pem'
 		hostname='hostname_2'
+		;;
 	*)
 		;;
 esac
