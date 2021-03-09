@@ -31,6 +31,6 @@ In order to copy files _to_ or _from_ a cloud machine, use the following command
 
 ```bash
 $ ssh_copy to <name_of_machine> path/of/local/file path/of/machine/destiny
-$ ssh_copy from <name_of_machine> path/of/machine/file path/of/file/destiny
+$ ssh_copy from <name_of_machine> path/of/machine/file path/of/local/destiny
 ```
 
