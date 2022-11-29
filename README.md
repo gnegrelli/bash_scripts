@@ -1,6 +1,6 @@
 # bash_scripts
 
-Simple bash scripts to facilitate day-to-day tasks using bash.
+Simple scripts to facilitate day-to-day tasks using bash.
 
 ## Setup
 
