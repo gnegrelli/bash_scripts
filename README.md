@@ -1,6 +1,6 @@
-# ssh_scripts
+# bash_scripts
 
-Simple shell scripts to facilitate day-to-day tasks using bash.
+Simple bash scripts to facilitate day-to-day tasks using bash.
 
 ## Setup
 
@@ -11,7 +11,7 @@ Edit the scripts to include your bluetooth devices and remote machines.
 Afterwards, make the scripts executable using the following commands on terminal.
 
 ```bash
-ssh_connect$ chmod -Rx scripts
+ssh_connect$ chmod -R +x scripts
 ```
 
 Then, copy the desired scripts to `~/bin` directory. After that, you can execute the scripts from anywhere on your terminal.
