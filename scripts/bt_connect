@@ -15,8 +15,9 @@ main () {
 	# Select device bt address 
 	device=''
 	case $1 in
+		# EDIT: add devices and their addresses
 		headset)
-			device='device_addres'
+			device='device_address'
 			;;
 		*)
 			echo "Unknown device \"$1\""

@@ -7,6 +7,7 @@ destiny=$4
 
 key=''
 case $machine in
+	# EDIT: add remote machines, their keys and hostnames
 	machine_1)
 		key='path_to_key1.pem'
 		hostname='hostname_1'

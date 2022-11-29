@@ -2,6 +2,7 @@
 
 key=''
 case $1 in
+	# EDIT: add remote machines, their keys and hostnames
 	machine_1)
 		key='path_to_key1.pem'
 		hostname='hostname_1'
