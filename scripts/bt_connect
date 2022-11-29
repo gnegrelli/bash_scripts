@@ -1,0 +1,66 @@
+#!/bin/bash
+
+usage () {
+	echo "$0 - Easily connect to bluetooth devices
+
+Usage:
+	$0 device_name
+
+Available devices:
+	headset
+	"
+}
+
+main () {
+	# Select device bt address 
+	device=''
+	case $1 in
+		headset)
+			device='device_addres'
+			;;
+		*)
+			echo "Unknown device \"$1\""
+			usage
+			;;
+	esac
+
+	if [ -n "$device" ]
+	then
+		echo -n Connecting...
+
+		# Turn bt controller on
+		bluetoothctl power on > /dev/null
+
+		# Connect to selected device
+		bluetoothctl connect $device > /dev/null
+
+		# Check for errors in last command
+		if [ $? -eq 0 ]
+		then
+			echo Done.
+		else
+			echo -e "\nERROR!"
+		fi
+	fi
+}
+
+# Check if any argument is passed
+if [ $# -eq 0 ]
+then
+	usage
+	exit 0
+fi
+
+# Check for optarg -h
+while getopts "h" arg; do
+	case "${arg}" in
+		h | *)
+			usage
+			exit 0
+			;;
+	esac
+done
+
+# Execute main function
+main $1
+
