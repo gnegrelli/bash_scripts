@@ -14,15 +14,13 @@ Afterwards, make the scripts executable using the following commands on terminal
 ssh_connect$ chmod -Rx scripts
 ```
 
-Then, copy the desired scripts to `~/bin` directory.
+Then, copy the desired scripts to `~/bin` directory. After that, you can execute the scripts from anywhere on your terminal.
 
 > NOTE: You might need to add the following line to your `~/.bashrc` file.
 >
 > ```bash
 > export PATH=$PATH:~/bin
 > ```
-
-After that, you can execute the scripts from anywhere on your terminal.
 
 ## Scripts
 
