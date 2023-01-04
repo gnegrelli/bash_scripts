@@ -30,6 +30,7 @@ main () {
 		echo -n Connecting...
 
 		# Turn bt controller on
+		rfkill unblock bluetooth > /dev/null
 		bluetoothctl power on > /dev/null
 
 		# Connect to selected device
